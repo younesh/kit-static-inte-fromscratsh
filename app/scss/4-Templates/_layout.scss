@@ -1,0 +1,29 @@
+.layout {
+    main.main {
+        // min-height: 600px;
+        // @include padding($gutter-half null);
+        padding-bottom: $gutter-half;
+        .container {}
+    }
+}
+
+.container {
+    width: 100%;
+    @include padding(null $gutter-half);
+}
+
+//-----  MEDIA QUERY / RESPONSIVE ----
+// only mobile : from 0 to 767
+@media #{$bp-max-sm} {}
+
+@media #{$bp-only-tablet} {}
+
+@media #{$bp-min-md} {}
+
+@media #{$bp-min-lg} {
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+        background-color: red;
+    }
+}

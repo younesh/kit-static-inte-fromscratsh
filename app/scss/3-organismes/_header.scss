@@ -1,0 +1,17 @@
+.header {
+    background-color: yellow;
+}
+
+//-----  MEDIA QUERY / RESPONSIVE ----
+// ONLY ON MOBILE
+@media #{$bp-max-sm} {}
+
+@media #{$bp-min-sm} {}
+
+@media #{$bp-only-tablet} {}
+
+@media #{$bp-min-md} {}
+
+@media #{$bp-min-lg} {}
+
+@media #{$bp-min-xl} {}
