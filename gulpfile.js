@@ -135,14 +135,14 @@ function watchTask() {
     // livereload.listen();
     watch(
         [
-            source.scssPath,
             source.jsPath,
             source.imgPath,
             source.fontPath,
             source.dataPath,
-            source.tplPath
+            source.tplPath,
+            source.scssPath
         ],
-        parallel(scssTask, jsTask, imgTask, fontTask, dataTask, tplTask, reload)
+        parallel(jsTask, imgTask, fontTask, dataTask, tplTask, scssTask, reload)
     );
 }
 

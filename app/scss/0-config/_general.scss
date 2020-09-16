@@ -1,13 +1,13 @@
 html,
 body {
     //   height: 100%;
+    font-size: 62.5%;
 }
 
 body {
     font-size: $fz-default;
     font-family: $font-family-content;
     color: $color-black-dark;
-    background-color: green; // 
 }
 
 p {
@@ -56,18 +56,18 @@ a {
 }
 
 .big-txt {
-    font-size: 45px;
+    font-size: 4.5rem;
     @extend .title;
     @media #{$bp-min-md} {
-        font-size: 90px;
+        font-size: 9rem;
     }
 }
 
 .h0-like {
     @extend .title;
-    font-size: 30px;
+    font-size: 3rem;
     @media #{$bp-min-md} {
-        font-size: 50px;
+        font-size: 5rem;
     }
 }
 
@@ -109,7 +109,7 @@ h4,
 // declare from .bold-12 to .bold-30
 @for $i from 12 through 30 {
     .bold-#{$i} {
-        font-size: #{$i}px;
+        font-size: #{$i/10}rem;
         font-family: $font-bold;
     }
 }

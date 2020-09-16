@@ -8,8 +8,9 @@
 }
 
 .container {
+    @include padding($gutter-half);
     width: 100%;
-    @include padding(null $gutter-half);
+    box-sizing: border-box;
 }
 
 //-----  MEDIA QUERY / RESPONSIVE ----
@@ -24,6 +25,5 @@
     .container {
         width: 1200px;
         margin: 0 auto;
-        background-color: red;
     }
 }
