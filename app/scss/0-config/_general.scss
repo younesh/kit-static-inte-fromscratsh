@@ -52,7 +52,7 @@ a {
 .title {
     font-family: $font-family-titles;
     font-weight: $fw-title-black;
-    color: $color-black-meduim;
+    // color: $color-black-meduim;
 }
 
 .big-txt {
@@ -107,10 +107,15 @@ h4,
 }
 
 // declare from .bold-12 to .bold-30
-@for $i from 12 through 30 {
+@for $i from 12 through 50 {
     .bold-#{$i} {
+        // bold-12 ...>>  .bold-50
         font-size: #{$i/10}rem;
         font-family: $font-bold;
+    }
+    .fz-#{$i} {
+        // fz-12 ...>> .fz-50
+        font-size: #{$i/10}rem;
     }
 }
 

@@ -3,6 +3,7 @@ app.global = {
     init: function() {
         // Load all global functions here
         console.log("load global functions");
+        //alert("this is init function !! 10 ")
         app.global.slideMainMenuMobile();
         app.global.SlideFilters();
         app.global.showFilter();

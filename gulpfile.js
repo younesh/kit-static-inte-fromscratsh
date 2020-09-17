@@ -63,7 +63,11 @@ function scssTask() {
         .pipe(sass()) // compile SCSS to CSS
         .pipe(postcss([autoprefixer(), cssnano()])) // PostCSS plugins
         .pipe(sourcemaps.write(".")) // write sourcemaps file in current directory
-        .pipe(dest(dist.scssPath)); // put final CSS in dist folder
+        .pipe(dest(dist.scssPath))
+        .pipe(server.reload({
+            stream: true
+        }));
+    // put final CSS in dist folder
 }
 
 // images task : compile img task

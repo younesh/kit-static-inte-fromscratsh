@@ -3,7 +3,7 @@ $font-regular: 'OpenSans-Regular';
 $font-semibold: 'OpenSans-SemiBold';
 $font-bold: 'OpenSans-Bold';
 $font-extrabold: 'OpenSans-ExtraBold';
-$font-family-titles: $font-bold;
+$font-family-titles: 'AmaticSC-Regular'; // $font-bold;
 $font-family-content: $font-semibold;
 $fw-title-light: 300;
 $fw-title-regular: 400;
@@ -22,7 +22,7 @@ $color-blue-light: #15b7eb;
 $color-blue-meduim: #4372c4;
 $color-blue-dark: #0a435e;
 $color-orange-light: #e1ca57;
-$color-orange-meduim: #ff8800;
+$color-orange-meduim: goldenrod; // goldenrod | #ff8800
 $color-red-light: #e05871;
 $color-red-meduim: #db3b3e;
 $color-red-dark: #972821;
