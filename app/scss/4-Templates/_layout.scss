@@ -1,16 +1,13 @@
 .layout {
     main.main {
-        // min-height: 600px;
-        // @include padding($gutter-half null);
+        min-height: 600px;
         padding-bottom: $gutter-half;
-        .container {}
     }
 }
 
 .container {
     @include padding($gutter-half);
     width: 100%;
-    box-sizing: border-box;
 }
 
 //-----  MEDIA QUERY / RESPONSIVE ----
