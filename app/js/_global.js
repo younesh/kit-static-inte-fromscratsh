@@ -2,14 +2,13 @@
 app.global = {
     init: function() {
         // Load all global functions here
-        console.log("load global functions");
-        //alert("this is init function !! 10 ")
-        app.global.slideMainMenuMobile();
-        app.global.SlideFilters();
-        app.global.showFilter();
-        app.global.initCalendar();
-        app.global.switchBtnStort();
-        app.global.sliderDown();
+        app.global.hellowWord();
+        // app.global.slideMainMenuMobile();
+        // app.global.initCalendar();
+        // app.global.sliderDown();
+    },
+    hellowWord: function() {
+        console.log("Hello word , generated js work !! ");
     },
     /* allows to see the main menu in mobile  */
     slideMainMenuMobile: function() {
@@ -40,50 +39,10 @@ app.global = {
         });
     },
 
-    // in the FILTER block, open / close the clicked criterion
-    SlideFilters: function() {
-        var titleCriterea = $(".criteria .criteria_title");
-        if (!titleCriterea.length) {
-            return;
-        }
-        titleCriterea.click(function(evt) {
-            $(evt.currentTarget)
-                .parents(".criteria")
-                .toggleClass("criteria--closed");
-        });
-    },
-
-    /*  to display the filter block in mobile mode */
-    showFilter: function() {
-        var btnFilter = $(".button--filter");
-        var btnCloseFilter = $(".filter_title > a");
-        var filter = $(".filter");
-
-        if (!btnFilter.length) {
-            return;
-        }
-
-        btnFilter.click(function() {
-            filter.toggleClass("filter--show");
-        }); //       .bind(filter)
-
-        btnCloseFilter.click(function() {
-            filter.toggleClass("filter--show");
-        });
-    },
-
     /* initialize a calendar in the date fields that contain the '.calendar' class  */
     initCalendar: function() {
         var optional_config = {};
         $(".calendar").flatpickr(optional_config);
-    },
-
-    /* (in .data-table) :allows to change the direction of the sort btn either up or down */
-    switchBtnStort: function() {
-        var btnSort = $(".btn-sort");
-        btnSort.click(function(evt) {
-            $(evt.currentTarget).toggleClass("btn-sort--up");
-        });
     },
 
     /* slider-down : component to slid down content  */

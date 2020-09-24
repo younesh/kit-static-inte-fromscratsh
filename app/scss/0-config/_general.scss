@@ -173,6 +173,11 @@ input {
 // LAYOUTAGE 
 .page {}
 
+.box {
+    width: 100%;
+    padding: $gutter-half;
+}
+
 //-----  MEDIA QUERY / RESPONSIVE ----
 @media #{$bp-min-sm} {}
 
